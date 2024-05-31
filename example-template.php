@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function example_template_acf_json_load_point( $paths ) {
-    $template_path = plugin_dir_path( __FILE__ ) . 'group_example_template.json';
+    $template_path = plugin_dir_path( __FILE__ ) . '*.json';
     
     // Check if the file exists
     if ( file_exists( $template_path ) ) {
